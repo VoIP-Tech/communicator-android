@@ -235,4 +235,55 @@
         <item name="android:autoSizeMinTextSize">8sp</item>
         <item name="android:autoSizeStepGranularity">1sp</item>
     </style>
+    <!-- Southern Cross overrides: replace Noto with your brand fonts -->
+    <style name="default_text_style_300">
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:textColor">?attr/color_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="default_text_style">
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:textColor">?attr/color_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="default_text_style_500">
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">?attr/color_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="default_text_style_600">
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">?attr/color_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="default_text_style_700">
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">?attr/color_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="default_text_style_800">
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">?attr/color_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- A couple of visible headers that were forced to Noto -->
+    <style name="main_page_title_style">
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">?attr/color_main1_500</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="assistant_page_title_style">
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">?attr/color_on_main</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>

@@ -175,49 +175,39 @@
         <item name="android:windowBackground">@color/transparent_color</item>
     </style>
 
-    <!-- Southern Cross / Nextvox Theme -->
-<style name="Theme.SouthernCross" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-    <!-- Brand Colors -->
-    <item name="colorPrimary">@color/primary_blue</item>
-    <item name="colorPrimaryVariant">@color/primary_blue</item>
-    <item name="colorSecondary">@color/accent_gray</item>
-    <item name="colorSecondaryVariant">@color/accent_gray</item>
+    <!-- Southern Cross / Nextvox Theme (inherits Linphone so its attrs map to our colors) -->
+    <style name="Theme.SouthernCross" parent="Theme.Linphone">
+        <!-- Map Linphone's primary rail to your brand blue -->
+        <item name="color_main1_100">@color/primary_blue</item>
+        <item name="color_main1_100_alpha_50">@color/primary_blue</item>
+        <item name="color_main1_300">@color/primary_blue</item>
+        <item name="color_main1_500">@color/primary_blue</item>
+        <item name="color_main1_700">@color/primary_blue</item>
 
-    <!-- Backgrounds -->
-    <item name="android:windowBackground">@color/white</item>
-    <item name="android:statusBarColor">@color/primary_blue</item>
-    <item name="android:navigationBarColor">@color/primary_blue</item>
+        <!-- Keep the neutral ramp; optionally adjust if you have a custom gray -->
+        <!-- (You can leave color_main2_* as-is or point a couple to @color/accent_gray) -->
+        <item name="color_main2_500">@color/accent_gray</item>
 
-    <!-- Default Font -->
-    <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <!-- Common text/on-main mappings -->
+        <item name="color_on_main">@color/white</item>
+        <item name="color_text">@color/gray_main2_600</item>
+        <item name="color_hint_text">@color/gray_main2_400</item>
 
-    <!-- Buttons -->
-    <item name="materialButtonStyle">@style/SouthernCrossButton</item>
+        <!-- Components commonly noticed first -->
+        <item name="color_button_background">@color/accent_gray</item>
+        <item name="color_button_pressed_background">@color/gray_main2_300</item>
+        <item name="color_button_disabled_background">@color/gray_200</item>
 
-    <!-- Text Appearances -->
-    <item name="textAppearanceHeadline1">@style/SouthernCrossHeadline</item>
-    <item name="textAppearanceBody1">@style/SouthernCrossBody</item>
-</style>
+        <!-- Chat bubble accent (outgoing) -->
+        <item name="color_chat_bubble_outgoing">@color/primary_blue</item>
 
-<!-- Button Style -->
-<style name="SouthernCrossButton" parent="Widget.MaterialComponents.Button">
-    <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
-    <item name="android:textColor">@color/white</item>
-    <item name="backgroundTint">@color/primary_blue</item>
-    <item name="cornerRadius">16dp</item>
-    <item name="android:elevation">4dp</item>
-</style>
+        <!-- System surfaces / bars -->
+        <item name="android:windowBackground">@color/bc_white</item>
+        <item name="android:statusBarColor">@color/primary_blue</item>
+        <item name="android:navigationBarColor">@color/primary_blue</item>
 
-<!-- Headline Text Style -->
-<style name="SouthernCrossHeadline" parent="TextAppearance.MaterialComponents.Headline5">
-    <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
-    <item name="android:textColor">@color/primary_blue</item>
-</style>
-
-<!-- Body Text Style -->
-<style name="SouthernCrossBody" parent="TextAppearance.MaterialComponents.Body1">
-    <item name="android:fontFamily">@font/raleway_regular</item>
-    <item name="android:textColor">@color/black</item>
-</style>
+        <!-- Default font (fallback when a widget doesn't hardcode one) -->
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+    </style>
 
 </resources>
