@@ -250,4 +250,15 @@
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textStyle">normal</item>
     </style>
+
+    <!-- Nextvox Communicator Typography Styles -->
+    <style name="NextvoxTitleTextStyle">
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="NextvoxBodyTextStyle">
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 </resources>
