@@ -31,35 +31,16 @@
         android:id="@+id/thirdPartySipAccountLoginFragment"
         android:name="org.linphone.ui.assistant.fragment.ThirdPartySipAccountLoginFragment"
         android:label="ThirdPartySipAccountLoginFragment"
-        tools:layout="@layout/assistant_third_party_sip_account_login_fragment" />
-
-    <fragment
-        android:id="@+id/thirdPartySipAccountWarningFragment"
-        android:name="org.linphone.ui.assistant.fragment.ThirdPartySipAccountWarningFragment"
-        android:label="ThirdPartySipAccountWarningFragment"
-        tools:layout="@layout/assistant_third_party_sip_account_warning_fragment" >
+        tools:layout="@layout/assistant_third_party_sip_account_login_fragment" >
 
         <action
-            android:id="@+id/action_thirdPartySipAccountWarningFragment_to_thirdPartySipAccountLoginFragment"
-            app:destination="@id/thirdPartySipAccountLoginFragment"
+            android:id="@+id/action_thirdPartySipAccountLoginFragment_to_qrCodeScannerFragment"
+            app:destination="@id/qrCodeScannerFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
-            app:launchSingleTop="true"
-            app:popUpTo="@id/thirdPartySipAccountLoginFragment"
-            app:popUpToInclusive="false" />
-
-        <action
-            android:id="@+id/action_thirdPartySipAccountWarningFragment_to_registerFragment"
-            app:destination="@id/registerFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:launchSingleTop="true"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
-            app:popUpTo="@id/thirdPartySipAccountLoginFragment"
-            app:popUpToInclusive="false" />
+            app:launchSingleTop="true" />
 
     </fragment>
 
