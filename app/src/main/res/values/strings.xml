@@ -147,6 +147,7 @@
     <string name="assistant_dialog_confirm_phone_number_title">Confirm phone number</string>
     <string name="assistant_dialog_confirm_phone_number_message">Are you sure your phone number is %s?</string>
     <string name="assistant_account_login">Login</string>
+    <string name="assistant_qr_code_login">Login with QR Code</string>
     <string name="assistant_scan_qr_code">Scan QR code</string>
     <string name="assistant_qr_code_invalid_toast">Invalid QR code!</string>
     <string name="assistant_login_third_party_sip_account">Use a Nextvox Account</string>
