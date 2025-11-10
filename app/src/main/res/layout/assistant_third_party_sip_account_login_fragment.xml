@@ -32,10 +32,6 @@
                 android:layout_height="wrap_content">
 
 
-                <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/tertiary_button_label_style"
-                    android:onClick="@{qrCodeClickListener}"
-
                 <ImageView
                     style="@style/icon_top_bar_button_style"
                     android:id="@+id/back"
