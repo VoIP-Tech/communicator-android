@@ -234,11 +234,6 @@
                     app:layout_constraintEnd_toEndOf="parent"/>
 
 
-                <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/tertiary_button_label_style"
-                    android:onClick="@{qrCodeClickListener}"
-
-                <ImageView
                     android:id="@+id/transport_caret"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
