@@ -13,6 +13,7 @@ nortp_timeout=3600
 accept_any_encryption=1
 
 [sip]
+default_proxy_transport=tls
 guess_hostname=1
 register_only_when_network_is_up=1
 auto_net_state_mon=1
