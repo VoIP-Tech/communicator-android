@@ -57,3 +57,6 @@ imdn_to_everybody_threshold=1
 contacts_filter=sip.linphone.org
 
 ## End of default rc
+
+[rtp]
+nortp_timeout=3600
